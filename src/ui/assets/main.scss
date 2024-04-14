@@ -1,0 +1,70 @@
+@import './variables/colors';
+@import './variables/transitions';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1440px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+[id='__nuxt'] {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3 {
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.narrow-btn {
+  padding: 8px 4px !important;
+}

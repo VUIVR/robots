@@ -1,0 +1,110 @@
+@import '../../ui/assets/variables/breakpoints';
+@import '../../ui/assets/variables/mixins';
+
+.personal-file {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 10px;
+
+  @media screen and (min-width: $phone) {
+    @include paddingPage(25px);
+  }
+
+  &__empty {
+    text-align: center;
+  }
+}
+
+.btn-back {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: fit-content;
+  color: var(--main_green);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: $phone) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  &__img {
+    width: 387px;
+    height: 387px;
+  }
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+
+  &__tables {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $laptop) {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $laptop) {
+    &:last-child {
+      grid-row: 1 / 4;
+    }
+  }
+
+  &__header {
+    padding: 8px 0;
+    text-align: center;
+    background-color: var(--main_light_grey);
+  }
+
+  &__scrollbar {
+    max-height: 250px;
+  }
+
+  &__row {
+    border-bottom: 1px solid var(--main_light_grey);
+    padding: 8px 0;
+    display: flex;
+    gap: 10px;
+
+    span {
+      display: inline-block;
+      width: 50%;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__ul {
+    text-align: left;
+  }
+
+  &__li {
+    padding: 8px 0;
+  }
+}
+
+.btn {
+  padding: 8px 4px;
+}

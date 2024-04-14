@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 285px;
+
+  &__img {
+    width: 285px;
+    height: 230px;
+  }
+
+  &__title {
+  }
+}

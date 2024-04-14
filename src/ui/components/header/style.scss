@@ -1,0 +1,13 @@
+@import '../../assets/variables/breakpoints';
+@import '../../assets/variables/mixins';
+
+.header {
+  display: flex;
+  height: 64px;
+  background-color: var(--main_light_green);
+  padding: 0 15px;
+
+  @media screen and (min-width: $phone) {
+    @include paddingPage;
+  }
+}

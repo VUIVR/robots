@@ -1,0 +1,41 @@
+@import '../ui/assets/variables/breakpoints';
+@import '../ui/assets/variables/mixins';
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  &__banner {
+    width: 100%;
+    max-height: 480px;
+  }
+}
+
+.content {
+  @include paddingPage;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  padding-bottom: 25px;
+
+  &__pagination {
+    margin: 0 auto;
+  }
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  &__empty {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $phone) {
+    justify-content: space-evenly;
+  }
+}

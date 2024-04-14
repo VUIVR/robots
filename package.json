@@ -1,0 +1,41 @@
+{
+  "name": "robots",
+  "author": "Artem Ostrovskiy",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=v20.11.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --host",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write --list-different . && eslint --ext \".ts,.vue\" --ignore-path .gitignore . --fix",
+    "lint": "eslint --ext \".ts,.vue\" --ignore-path .gitignore . && prettier --check .",
+    "tscheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "axios": "^1.6.8",
+    "element-plus": "^2.7.0",
+    "nuxt": "^3.11.2",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@element-plus/nuxt": "^1.0.8",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "sass": "^1.74.1",
+    "vue-tsc": "^2.0.13",
+    "typescript": "^5.3.3"
+  },
+  "browserslist": {}
+}

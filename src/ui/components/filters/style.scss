@@ -1,0 +1,26 @@
+@import '../../assets/variables/breakpoints';
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: $phone) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  &__input {
+    max-width: 285px;
+
+    @media screen and (min-width: $phone) {
+      max-width: 385px;
+    }
+  }
+
+  &__select {
+    max-width: 285px;
+  }
+}
